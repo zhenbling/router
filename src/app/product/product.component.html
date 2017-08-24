@@ -1,0 +1,13 @@
+<p>
+  product works!
+</p>
+<p>
+  商品id是：{{productId}}
+</p>
+<p>
+  商品名称是：{{productName}}
+</p>
+<a [routerLink]="['./']">商品描述</a>
+<!--路径开头写/，意思是找根路由，会直接跳到/home，写./，意思是当前这个链接指向当前html所在的控件的路由的子路由，自路由的路径时一个空字符串-->
+<a [routerLink]="['./seller',99]">销售员信息</a>
+<router-outlet></router-outlet>
